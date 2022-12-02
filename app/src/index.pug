@@ -1,0 +1,43 @@
+- let cols = [
+-   '#26e0ec, #bf4fd9', 
+-   '#ffda5f, #f9376b', 
+-   '#feb6b7, #6148c0', 
+-   '#00ecac, #3b5fe9', 
+-   '#fe3ea3, #6c41ac'
+- ];
+- let btns = {
+-   'comments': '🗨️', 
+-   'settings': '⚙️', 
+-   'profile': '👱', 
+-   'search': '🔍', 
+-   'like': '🖤', 
+-   'delete': '🗑️', 
+-   'purchase': '🛒', 
+-   'ok': '✔️', 
+-   'cancel': '❌', 
+-   'attach': '📎', 
+-   'favourites': '⭐', 
+-   'location': '📍', 
+-   'book now': '👆', 
+-   'registration': '✏️', 
+-   'learn more': '❯', 
+-   'login': '🔒', 
+-   'subscribe': '🔔', 
+-   'home': '🏠', 
+-   'microphone': '🎙️', 
+-   'play now': 'ᐅ'
+- };
+- let m = cols.length;
+- let opts = [
+-   'Simple Chrome-only (non-standard) solution', 
+-   'Extra pseudo cross-browser solution', 
+-   'No pill rounding solution'
+- ];
+- let n = opts.length;
+
+- for(let i = 0; i < n; i++)
+  section
+    h3 #{opts[i]}
+    - for(let p in btns)
+      - let idx = ~~(Math.random()*m)
+      button(data-ico=btns[p] style=`--slist: ${cols[idx]}`) #{p}
