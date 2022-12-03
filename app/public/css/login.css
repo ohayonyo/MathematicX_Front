@@ -1,40 +1,4 @@
 
-/* 
-.reg {
-
-  border: double 4px transparent;
-  border-radius: 40px;
-  background-image: linear-gradient(#fd1d1d, #fcb045), radial-gradient(circle at top left, #fd1d1d,#fcb045);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  text-align: center;
-  
-  margin-right: 10px;
-  margin-left: 10px;
-} */
-
-/* 
-.head_font {
-  text-align: center;
-  margin-top: 170px;
-  font-size: 70px;
-  background-origin: text;
-  background-color: linear-gradient(#fd1d1d, #fcb045), radial-gradient(circle at top left, #fd1d1d,#fcb045);
-} */
-
-
-
-/* button:hover {
-  color: white;
-  box-shadow: 0 0 20px rgba(104,85,224,0.6);
-  background-color: rgba(104,85,224,1);
-  cursor: pointer;
-} */
-
-
-/* -------------------------------------------------------------- */
-
-
 
 @-webkit-keyframes animatezoom {
   from {-webkit-transform: scale(0)}
@@ -171,7 +135,7 @@ button::after {
   padding: 60px 60px;
   background: url(https://picsum.photos/id/1004/5616/3744) no-repeat   center center #505050;   
   background-size: cover;
-   background-image: url('pictures/signin_background.jpg');
+   background-image: url('../pictures/signin_background.jpg');
   box-shadow: 0px 30px 60px -5px #000;
 }
 
@@ -192,7 +156,7 @@ button::after {
   padding: 60px 60px;
   background: url(https://picsum.photos/id/1004/5616/3744) no-repeat   center center #505050;   
   background-size: cover;
-   background-image: url('pictures/register_background.jpg');
+  background-image: url('../pictures/signin_background.jpg');
   box-shadow: 0px 30px 60px -5px #000;
 }
 
@@ -215,6 +179,7 @@ button::after {
 .nonactive {
   color: rgba(255, 255, 255, 0.2);
 }
+
 
 /* h2 {
   padding-left: 12px;
@@ -372,4 +337,45 @@ h2,
   position: relative;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.658);
+}
+
+
+body {
+  background-color: #d3d3d3;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  padding-left: 12px;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 100;
+}
+
+h2:first-child {
+  padding-left: 0px;
+}
+
+input[type="text"],
+input[type="password"] {
+font-family: 'Montserrat', sans-serif;
+color: #fff;
+}
+
+input {
+display: inline-block;
+padding-top: 20px;
+font-size: 14px;
+}
+
+h2,
+.LoginRegister_Span,
+.LoginPage_RememberMeCheckbox {
+margin-left: 20px;
 }

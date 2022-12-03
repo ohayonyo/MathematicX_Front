@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
   
 import Header from "./components/Header";
+import HomePage from "./components/HomePage";
+import HomePageTest from "./components/HomePageTest";
 import LoginPage from "./components/LoginPage";
 import RegisterPage from "./components/RegisterPage";
 
@@ -44,8 +46,14 @@ function App() {
 
   return (
     <div className="App">
-      <LoginPage/>
-      <RegisterPage/>
+      {/* <RegisterPage/> */}
+      <HomePageTest/>
+      {/* <RegisterPage/> */}
+
+      {/* <HomePageTest/> */}
+      {/* <HomePage/> */}
+      {/* <LoginPage/>
+      <RegisterPage/> */}
 
     </div>
   );

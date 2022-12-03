@@ -20,6 +20,8 @@
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
+
+    <link href="../css/register.css" rel="stylesheet" type="text/css">
     <!-- <style>
       body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
       body {font-size:16px;}
@@ -42,8 +44,50 @@
 
   
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+    
+
+
+    <div>
+
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'></link>
+
+      <div class="RegisterPage_Screen">
+        <h2 class="nonactive"> sign in </h2>
+
+        <h2 class="active"> sign up </h2>
+
+        <form class="RegisterPage_Form">
+          <input type="text" class="RegisterPage_text" name="firstname" required/>
+          <span class="LoginRegister_Span">first name</span>
+
+          <input type="text" class="RegisterPage_text" name="lastname" required/>
+          <span class="LoginRegister_Span">last name</span>
+
+          <input type="text" class="RegisterPage_text" name="id" required/>
+          <span class="LoginRegister_Span">id</span>
+
+          <input type="text" class="RegisterPage_text" name="username" required/>
+          <span class="LoginRegister_Span">username</span>
+          <input type="password" class="RegisterPage_text" name="password" required></input>
+          <span class="LoginRegister_Span">password</span>
+          
+          <br></br>
+          <br></br>
+          <input type="date" id="bitrh_day" name="birthday" class="RegisterPage_Birthdate" required/>
+          
+          <button class="RegisterPage_SignupButton">
+            Sign Up
+          </button>
+        
+          <h1></h1>
+
+        </form>
+      </div>
+      
+    </div>
+
+    <!-- <div id="root2"></div> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

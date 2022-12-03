@@ -1,70 +1,83 @@
 import React from 'react'
 
 const LoginPage = () => {
-  // const primaryStyle = {position:'relative',top:100,textAlign:'center'}
-  // return (
-  //   <div>
-  //     <div className='clear_screen'></div>
+  const styles = `
+  body {
+    background-color: #d3d3d3;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
 
-  //     <div style={primaryStyle}>
+  h2 {
+    padding-left: 12px;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 100;
+  }
+  
+  h2:first-child {
+    padding-left: 0px;
+  }
 
-  //       <div style={{position:'relative',left:100,top:50}}>
-  //         <div className='person_pic'></div>
-  //       </div>
+  input[type="text"],
+input[type="password"] {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
 
-  //       <div style={{position:'relative',bottom:150}}> 
-  //         <label htmlFor="uname"><b>Username</b></label>
-  //         <br></br>
-  //         <input type="text" placeholder='Enter Username' name='uname' required/>
-  //         <br></br>
-  //         <label htmlFor="psw"><b>Password</b></label>
-  //         <br></br>
-  //         <input type="password" placeholder='Enter Password' name='psw' required/>
-  //         <br></br>
-  //         <button type='submit'>Login</button>
+input {
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 14px;
+}
 
-  //         <label style={{fontSize:10}}>
-  //           <input type="checkbox" name='remember'/> Remember me
-  //         </label>
-  //       </div>
-
-  //     </div>
-
-  //   </div>
-  // )
+h2,
+.LoginRegister_Span,
+.LoginPage_RememberMeCheckbox {
+  margin-left: 20px;
+}
+`;
   return (
     <div>
-      
+      {/* <style>
+        {styles}
+      </style>
+       */}
       <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'></link>
 
-      <div class="login">
+      <div class="LoginPage_Screen">
         <h2 class="active"> sign in </h2>
 
         <h2 class="nonactive"> sign up </h2>
 
-        <form class="login_form">
+        <form class="LoginPage_Form">
 
-          <input type="text" class="text" name="username"/>
+          <input type="text" class="LoginPage_text" name="username" required/>
 
-          <span>username</span>
+          <span class="LoginRegister_Span">username</span>
     
           <br></br>
           <br></br>
 
-          <input type="password" class="text" name="password"></input>
-          <span>password</span>
+          <input type="password" class="LoginPage_text" name="password" required></input>
+          <span class="LoginRegister_Span">password</span>
           <br></br>
 
-          <input type="checkbox" id="checkbox-1-1" class="custom-checkbox" />
+          <input type="checkbox" id="checkbox-1-1" class="LoginPage_RememberMeCheckbox" />
 
-          <label for="checkbox-1-1">Keep me Signed in</label>
+          <label for="checkbox-1-1" class="LoginPage_Label">Keep me Signed in</label>
 
-          <button class="signin">
+          <button class="LoginPage_SigninButton">
             Sign In
           </button>
         
           <h1></h1>
-          <a href="#" class="forgot_password_link">Forgot Password?</a>
+          <a href="#" class="LoginPage_forgotPasswordLink">Forgot Password?</a>
 
         </form>
       </div>
