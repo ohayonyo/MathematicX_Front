@@ -1,5 +1,4 @@
-import React from 'react'
-import { ReactDOM } from 'react';
+// import React from 'react'
 
 
 const HomePageTest = () => {
@@ -59,16 +58,16 @@ const styles = `
 
 `;
   
-function hello(){
-  const root = ReactDOM.createRoot(document.getElementById('register_page'));
-  // alert("yessssssssssss")
-  root.render(
-    <React.StrictMode>
-    <h1>YESSSSS</h1>
-  </React.StrictMode>
-  );
+// function hello(){
+//   const root = ReactDOM.createRoot(document.getElementById('register_page'));
+//   // alert("yessssssssssss")
+//   root.render(
+//     <React.StrictMode>
+//     <h1>YESSSSS</h1>
+//   </React.StrictMode>
+//   );
 
-}
+// }
   return (
     <div>
 
@@ -86,7 +85,7 @@ function hello(){
           <a href="#" onClick={()=>w3_close('btn1')} class="w3-bar-item w3-button w3-hover-white w3-click-white" id="btn1">Home</a> 
           <a href="#commonquestions" onClick={()=>w3_close('btn2')} class="w3-bar-item w3-button w3-hover-white w3-click-white" id="btn2">Common questions</a> 
           <a href="html/login.html" onClick={()=>w3_close('btn3')} class="w3-bar-item w3-button w3-hover-white w3-click-white" id="btn3">Login</a> 
-          <a href="html/register.html" onClick={()=>hello()} class="w3-bar-item w3-button w3-hover-white w3-click-white" id="btn4">Register</a> 
+          <a href="html/register.html" onClick={()=>w3_close('btn4')} class="w3-bar-item w3-button w3-hover-white w3-click-white" id="btn4">Register</a> 
         </div>
       </nav>
 
