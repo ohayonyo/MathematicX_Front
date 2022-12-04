@@ -43,7 +43,7 @@
   </head>
 
   
-  <body>
+  <body id="body_register">
     <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
     
 
@@ -53,9 +53,9 @@
       <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'></link>
 
       <div class="RegisterPage_Screen">
-        <h2 class="nonactive"> sign in </h2>
+        <h2 class="nonactive"><a href="/html/login.html" style="text-decoration:none;">sign in</a></h2>
 
-        <h2 class="active"> sign up </h2>
+        <h2 class="active" style="font-weight: 400;">sign up</h2>
 
         <form class="RegisterPage_Form">
           <input type="text" class="RegisterPage_text" name="firstname" required/>
@@ -70,11 +70,11 @@
           <input type="text" class="RegisterPage_text" name="username" required/>
           <span class="LoginRegister_Span">username</span>
           <input type="password" class="RegisterPage_text" name="password" required></input>
-          <span class="LoginRegister_Span">password</span>
+          <span class="LoginRegister_Span">password</span> 
           
-          <br></br>
-          <br></br>
-          <input type="date" id="bitrh_day" name="birthday" class="RegisterPage_Birthdate" required/>
+          <!-- <br></br> -->
+          <!-- <br></br>
+          <input type="date" id="bitrh_day" name="birthday" class="RegisterPage_Birthdate" required/> -->
           
           <button class="RegisterPage_SignupButton">
             Sign Up

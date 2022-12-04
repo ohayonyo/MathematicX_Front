@@ -72,9 +72,9 @@ function hello(){
   return (
     <div>
 
-      <style scoped>
+      {/* <style scoped>
         {styles}
-      </style>
+      </style> */}
       {/* Sidebar/menu */}
       <nav class="w3-sidebar w3-mycolor w3-collapse w3-top w3-large w3-padding style1" id="mySidebar">
         <br></br>

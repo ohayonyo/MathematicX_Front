@@ -10,8 +10,7 @@ import {
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
 import HomePageTest from "./components/HomePageTest";
-import LoginPage from "./components/LoginPage";
-import RegisterPage from "./components/RegisterPage";
+
 
 
 function App() {
