@@ -1,5 +1,7 @@
 // import React from 'react'
-
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import '../index.css'
 
 const HomePageTest = () => {
   
@@ -57,10 +59,12 @@ const styles = `
   }
 
 `;
+
+
   
 // function hello(){
 //   const root = ReactDOM.createRoot(document.getElementById('register_page'));
-//   // alert("yessssssssssss")
+//   alert("yessssssssssss")
 //   root.render(
 //     <React.StrictMode>
 //     <h1>YESSSSS</h1>
@@ -68,30 +72,52 @@ const styles = `
 //   );
 
 // }
+{
+  // let x=5
+  // if(x<6){
+  //   const root = ReactDOM.createRoot(document.getElementById('root'));
+  //   const root2 = ReactDOM.createRoot(document.getElementById('root2'));
+  //   root.render(
+  //     <React.StrictMode>
+  //     <h1>YESSSSS</h1>
+  //   </React.StrictMode>
+  //   );
+
+  //   root2.render(
+  //     <React.StrictMode>
+  //     <h1>Hello</h1>
+  //   </React.StrictMode>
+  //   );
+  // }
+    
+}
+const style_menu_labels = {textAlign:'right',marginTop:0,marginBottom:0,fontSize:'3vh'};
   return (
     <div>
-
       {/* <style scoped>
         {styles}
       </style> */}
       {/* Sidebar/menu */}
-      <nav class="w3-sidebar w3-mycolor w3-collapse w3-top w3-large w3-padding style1" id="mySidebar">
+      <nav class="w3-sidebar w3-mycolor w3-collapse w3-top w3-large w3-padding style1" style={{position:'fixed',right:0,top:0,width:'15%'}} id="mySidebar">
         <br></br>
-        <a href="javascript:void(0)" onClick={()=>w3_close('1')} class="w3-button w3-hide-large w3-display-topleft style2">Close Menu</a>
-        <div class="w3-container">
-          <h3 class="w3-padding-64"><b>𝑀𝒶𝓉𝒽𝑒𝓂𝒶𝓉𝒾𝒸𝒳<br></br></b></h3>
+        <a href="javascript:void(0)" onClick={()=>w3_close('1')} class="w3-button w3-hide-large w3-display-topleft style2" style={{fontSize:'4.5vh'}}>סגור תפריט</a>
+        <div style={{textAlign:'center'}}>
+          <div>
+            <h3 class="w3-padding-64"><b style={{textAlign:'center',fontSize:'3.5vh'}}>𝑀𝒶𝓉𝒽𝑒𝓂𝒶𝓉𝒾𝒸𝒳<br></br></b></h3>
+          </div>
+          <div class="w3-bar-block" style={{fontSize:'20px',marginTop:'-10%'}}>
+            <a href="#" onClick={()=>w3_close('btn1')} class="w3-bar-item w3-button w3-hover-white w3-click-white" id="btn1" ><p style={style_menu_labels}>דף הבית</p></a> 
+            <a href="#commonquestions" onClick={()=>w3_close('btn2')} class="w3-bar-item w3-button w3-hover-white w3-click-white" id="btn2"> <p style={style_menu_labels}>שאלות נפוצות</p></a> 
+            <a href="/login" onClick={()=>w3_close('btn3')} class="w3-bar-item w3-button w3-hover-white w3-click-white" id="btn3"><p style={style_menu_labels}>התחברות</p></a> 
+            {/* <a href="/register" onClick={()=>w3_close('btn4')} class="w3-bar-item w3-button w3-hover-white w3-click-white" id="btn4"><p style={style_menu_labels}>הרשמה</p></a>  */}
+          </div>
         </div>
-        <div class="w3-bar-block">
-          <a href="#" onClick={()=>w3_close('btn1')} class="w3-bar-item w3-button w3-hover-white w3-click-white" id="btn1">Home</a> 
-          <a href="#commonquestions" onClick={()=>w3_close('btn2')} class="w3-bar-item w3-button w3-hover-white w3-click-white" id="btn2">Common questions</a> 
-          <a href="html/login.html" onClick={()=>w3_close('btn3')} class="w3-bar-item w3-button w3-hover-white w3-click-white" id="btn3">Login</a> 
-          <a href="html/register.html" onClick={()=>w3_close('btn4')} class="w3-bar-item w3-button w3-hover-white w3-click-white" id="btn4">Register</a> 
-        </div>
+       
       </nav>
 
         {/* Top menu on small screens */}
       <header class="w3-container w3-top w3-hide-large w3-mycolor w3-xlarge w3-padding">
-        <a href="javascript:void(0)" class="w3-button w3-mycolor w3-margin-right" onClick={w3_open}>☰</a>
+        <a href="javascript:void(0)" class="w3-button w3-mycolor w3-margin-right" style={{position:'fixed',right:0,top:0}} onClick={w3_open}>☰</a>
         <span>𝑀𝒶𝓉𝒽𝑒𝓂𝒶𝓉𝒾𝒸𝒳</span>
       </header>
 
@@ -101,22 +127,30 @@ const styles = `
        <div class="w3-overlay w3-hide-large" onClick={()=>w3_close('2')} style={{cursor:'pointer'}} title="close side menu" id="myOverlay"></div>
 
        {/* PAGE CONTENT */}
-      <div class="w3-main style4">
+      <div >
+
           {/* Header */}
-        <div class="w3-container" style={{marginTop:80}}>
-          <h1 class="w3-jumbo"><b>Welcome to MathematicX</b></h1>
+        <div  style={{textAlign:'center',marginRight:'20%'}}>
+          <h1 class="w3-jumbo"><b style={{fontSize:'7vh'}}>MathematicX-ברוכים הבאים ל</b></h1>
 
           <br></br>
-          <br></br>
-          <h1 class="w3-xxxlarge w3-text-mycolor"><b style={{fontSize:40}}>About us</b></h1>
-          <p>MathematicX is an Education tool for teachers that encourage creativity in students by letting them the option to create math problems of their own. MathematicX can help the teacher to monitor the improvement progress of the students. In addition, MathematicX can help the students to improve their math skills by generating them the questions they failed answer with different data.</p>
+          <h1 class="w3-xxxlarge w3-text-mycolor"><b style={{fontSize:'5.5vh'}}>?מי אנחנו</b></h1>
+          <div style={{fontWeight:'bold',fontSize:20,textAlign:'right'}}>
+            <p>האתר הינו כלי חינוכי למורים המעודד יצירתיות בקרב התלמידים בכך שהוא מאפשר להם ליצור בעיות מתמטיות משלהם. המערכת יכולה לעזור למורה לעקוב אחר התקדמות השיפור של התלמידים. בנוסף, המערכת יכולה לעזור לתלמידים לשפר את כישורי המתמטיקה שלהם על ידי יצירת השאלות עליהן לא הצליחו לענות עם נתונים שונים</p>
+            {/* <a>.האתר הינו כלי חינוכי למורים המעודד יצירתיות בקרב התלמידים בכך שהוא מאפשר להם ליצור בעיות מתמטיות משלהם</a>
+            <br></br>
+            <a>.המערכת יכולה לעזור למורה לעקוב אחר התקדמות השיפור של התלמידים</a>
+            <br></br>
+            <a>.בנוסף, המערכת יכולה לעזור לתלמידים לשפר את כישורי המתמטיקה שלהם על ידי יצירת השאלות עליהן לא הצליחו לענות עם נתונים שונים</a> */}
+          </div>
+          
         </div>
 
       
       {/* Common questions */}
-      <div class="w3-container" id="commonquestions" style={{marginTop:75}}>
-        <h1 class="w3-xxxlarge w3-text-mycolor"><b style={{fontSize:40}}>Common questions</b></h1>
-        <p> Here you will see the most popular questions in our website</p>
+      <div class="w3-container" id="commonquestions" style={{textAlign:'center',marginRight:'20%'}}>
+        <h1 class="w3-xxxlarge w3-text-mycolor"><b style={{fontSize:'5.5vh'}}>שאלות נפוצות</b></h1>
+        <p style={{fontWeight:'bold',fontSize:20,textAlign:'right'}}>כאן יופיעו שאלות נפוצות להתמצאות</p>
       </div>
 
 
